@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514751A0270508D700F9E719 /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5147519F270508D700F9E719 /* FruitCardView.swift */; };
+		514751A227050CB600F9E719 /* FMStartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514751A127050CB600F9E719 /* FMStartButtonView.swift */; };
+		514751A427050F7800F9E719 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514751A327050F7800F9E719 /* OnboardingView.swift */; };
 		51F9EC3A270501F90039A245 /* FolmulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9EC39270501F90039A245 /* FolmulApp.swift */; };
 		51F9EC3C270501F90039A245 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9EC3B270501F90039A245 /* ContentView.swift */; };
 		51F9EC3E270501FC0039A245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F9EC3D270501FC0039A245 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5147519F270508D700F9E719 /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
+		514751A127050CB600F9E719 /* FMStartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMStartButtonView.swift; sourceTree = "<group>"; };
+		514751A327050F7800F9E719 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		51F9EC36270501F90039A245 /* Folmul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Folmul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F9EC39270501F90039A245 /* FolmulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolmulApp.swift; sourceTree = "<group>"; };
 		51F9EC3B270501F90039A245 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5147519D2705084800F9E719 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				51F9EC39270501F90039A245 /* FolmulApp.swift */,
+				51F9EC3B270501F90039A245 /* ContentView.swift */,
+				514751A327050F7800F9E719 /* OnboardingView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5147519E270508B300F9E719 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5147519F270508D700F9E719 /* FruitCardView.swift */,
+				514751A127050CB600F9E719 /* FMStartButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		51F9EC2D270501F90039A245 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +76,8 @@
 		51F9EC38270501F90039A245 /* Folmul */ = {
 			isa = PBXGroup;
 			children = (
-				51F9EC39270501F90039A245 /* FolmulApp.swift */,
-				51F9EC3B270501F90039A245 /* ContentView.swift */,
+				5147519E270508B300F9E719 /* View */,
+				5147519D2705084800F9E719 /* App */,
 				51F9EC3D270501FC0039A245 /* Assets.xcassets */,
 				51F9EC3F270501FC0039A245 /* Preview Content */,
 			);
@@ -137,7 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514751A0270508D700F9E719 /* FruitCardView.swift in Sources */,
 				51F9EC3C270501F90039A245 /* ContentView.swift in Sources */,
+				514751A227050CB600F9E719 /* FMStartButtonView.swift in Sources */,
+				514751A427050F7800F9E719 /* OnboardingView.swift in Sources */,
 				51F9EC3A270501F90039A245 /* FolmulApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,8 +292,9 @@
 		51F9EC45270501FC0039A245 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconx;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Folmul/Preview Content\"";
@@ -275,9 +304,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,8 +324,9 @@
 		51F9EC46270501FC0039A245 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconx;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Folmul/Preview Content\"";
@@ -305,9 +336,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
